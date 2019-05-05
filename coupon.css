@@ -1,0 +1,220 @@
+/*
+ *  Version: 1.0.0
+ *  Author: Raish Varia
+ *  Github: https://github.com/raishvaria/Coupon 
+*/
+
+/* Coupon style */
+.coupon-card {
+    min-width: 400px;
+    max-width: 520px;
+    margin: 10px;
+}
+
+.coupon {
+    font-family: 'Montserrat', sans-serif !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+    -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px, rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+                    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px, rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+    background: transparent;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.coupon .coupon:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.11) 0px 15px 30px 0px, rgba(0, 0, 0, 0.08) 0px 5px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.11) 0px 15px 30px 0px, rgba(0, 0, 0, 0.08) 0px 5px 15px 0px;
+}
+
+.coupon .coupon-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 200px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: relative;
+    -webkit-box-shadow: 10px 0 20px -10px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 0 20px -10px rgba(0, 0, 0, 0.8);
+    z-index: 30;
+    padding: 13px;
+}
+
+.coupon .coupon-info i {
+    font-size: 3rem;
+    color: white;
+}
+
+.coupon .coupon-info h2 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.coupon .coupon-info h2 i {
+    font-size: 2.8rem;
+}
+
+.coupon .coupon-info span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.coupon .coupon-offer {
+    -webkit-box-flex: 1;
+            -ms-flex: 1;
+                    flex: 1;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.coupon .coupon-offer .offer-image {
+    width: 45%;
+    bottom: -5px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.coupon .coupon-offer .offer-image img {
+    width: 100%;
+}
+
+.coupon .coupon-offer .offer-box {
+    width: 125px;
+    height: 110px;
+    background: #ffffff;
+    position: absolute;
+    right: -14px;
+    border-radius: 50%;
+    top: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+    -webkit-box-align: center;
+            -ms-flex-align: center;
+                    align-items: center;
+    font-size: 2.4rem;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1. Gift oupon */
+.gift-coupon .coupon-info {
+    background: linear-gradient(90deg, #ef949b 19px, transparent 1%) center, linear-gradient(#ef949b 19px, transparent 1%) center, rgba(239, 148, 155, 0.68);
+    background-size: 22px 22px;
+}
+
+.gift-coupon .coupon-info span {
+    color: #af549b;
+}
+
+.gift-coupon .coupon-offer {
+    background-image: url(img/bubbles.png);
+    background-color: #bce4e6;
+}
+
+.gift-coupon .coupon-offer .offer-box {
+    color: #ef949b;
+}
+
+/* 1. Birthday coupon */
+.birthday-coupon .coupon-info {
+    background: linear-gradient(90deg, #a687c0 19px, transparent 1%) center, linear-gradient(#a687c0 19px, transparent 1%) center, rgba(166, 135, 192, 0.68);
+    background-size: 22px 22px;
+}
+
+.birthday-coupon .coupon-info span {
+    color: #fed269;
+}
+
+.birthday-coupon .coupon-offer {
+    background-image: url(img/bubbles.png);
+    background-color: #fed269;
+}
+
+/* Love coupon */
+.birthday-coupon .coupon-offer .offer-box {
+    color: #a687c0;
+}
+
+.love-coupon .coupon-info {
+    background: linear-gradient(90deg, #f44336 19px, transparent 1%) center, 
+        linear-gradient(#f44336 19px, transparent 1%) center, 
+        rgba(244, 67, 54, 0.68);
+    background-size: 22px 22px;
+}
+
+.love-coupon .coupon-info span {
+    color: #faebd7;
+}
+
+.love-coupon .coupon-offer {
+    background-image: url(img/heart.png);
+    background-color: #faebd7;
+}
+
+.love-coupon .coupon-offer .offer-box {
+    color: #f44336;
+}
+
+
+/* Make responsive coupon */
+@media(max-width: 412px) {
+    .coupon-card {
+        min-width: 310px;
+    }
+
+    .coupon-info h2,
+    .coupon-info span {
+        font-size: 1.3rem;
+    }
+
+    .coupon-info h2 i {
+        font-size: 2.3rem;
+    }
+    
+    .coupon-offer .offer-box{
+        font-size: 2.2rem;
+    }
+}
