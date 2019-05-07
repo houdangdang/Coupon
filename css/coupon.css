@@ -150,7 +150,7 @@ a {
 }
 
 .gift-coupon .coupon-offer {
-    background-image: url(img/bubbles.png);
+    background-image: url(../img/bubbles.png);
     background-color: #bce4e6;
 }
 
@@ -169,7 +169,7 @@ a {
 }
 
 .birthday-coupon .coupon-offer {
-    background-image: url(img/bubbles.png);
+    background-image: url(../img/bubbles.png);
     background-color: #fed269;
 }
 
@@ -190,7 +190,7 @@ a {
 }
 
 .love-coupon .coupon-offer {
-    background-image: url(img/heart.png);
+    background-image: url(../img/heart.png);
     background-color: #faebd7;
 }
 
